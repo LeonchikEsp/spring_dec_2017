@@ -10,6 +10,11 @@ import javax.annotation.PostConstruct;
 @DeprecatedClass(newImplementation = T1000.class)
 @Profiling
 public class TerminatorQuoter implements Quoter {
+
+    public void setRepeat(int repeat) {
+        this.repeat = repeat;
+    }
+
     @InjectRandomInteger(min = 2, max = 7)
     private int repeat;
 
