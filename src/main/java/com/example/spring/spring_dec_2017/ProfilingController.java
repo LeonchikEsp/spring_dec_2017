@@ -5,7 +5,7 @@ public class ProfilingController implements ProfilingControllerMBean{
     private boolean enabled;
 
     public boolean isEnabled() {
-        return enabled;
+        return true;
     }
 
     public void setEnabled(boolean enabled) {

@@ -1,6 +1,7 @@
 package com.example.spring.spring_dec_2017;
 
 import com.example.spring.spring_dec_2017.MyAnnotation.InjectRandomInteger;
+import com.example.spring.spring_dec_2017.MyAnnotation.PostProxy;
 import com.example.spring.spring_dec_2017.MyAnnotation.Profiling;
 
 import javax.annotation.PostConstruct;
@@ -27,8 +28,10 @@ public class TerminatorQuoter implements Quoter {
         this.message = message;
     }
 
+    @PostProxy
     @Override
     public void SayQuote() {
+        System.out.println("Post proxy");
         for (int i = 0; i < repeat; i++) {
             System.out.println("message = " + message);
         }
