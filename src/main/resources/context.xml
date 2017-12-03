@@ -6,6 +6,7 @@
 
     <context:annotation-config/>
 
+    <bean class="com.example.spring.spring_dec_2017.MyAnnotation.DeprecationHandlerBeanFactoryPostProcessor"/>
     <bean class="com.example.spring.spring_dec_2017.MyAnnotation.PostProxyInvokerContextListener"/>
     <bean class="com.example.spring.spring_dec_2017.MyAnnotation.ProfilingHandlerBeanPostProcessor"/>
     <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
