@@ -1,9 +1,11 @@
 package com.example.spring.spring_dec_2017;
 
 import com.example.spring.spring_dec_2017.MyAnnotation.InjectRandomInteger;
+import com.example.spring.spring_dec_2017.MyAnnotation.Profiling;
 
 import javax.annotation.PostConstruct;
 
+@Profiling
 public class TerminatorQuoter implements Quoter {
     @InjectRandomInteger(min = 2, max = 7)
     private int repeat;

@@ -26,7 +26,6 @@ public class InjectRandomIntegerAnnotationBeanPostProcessor
                 ReflectionUtils.setField(field, bean, r);
             }
         }
-
         return bean;
     }
 
